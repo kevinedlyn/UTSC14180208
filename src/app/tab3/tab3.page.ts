@@ -46,7 +46,7 @@ export class Tab3Page {
 
   deleteNote()
   {
-    
+    this.isiDataCol.doc(this.judulTemp).delete();
+    this.router.navigate(['tab2']); 
   }
-  
 }
