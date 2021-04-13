@@ -3,17 +3,7 @@ import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/fire
 import { AngularFireStorage } from '@angular/fire/storage';
 import { Observable } from 'rxjs';
 import { FotoService } from '../foto.service';
-
-
-
-interface note 
-{
-  judul : string,
-  isi : string,
-  nilai : string,
-  foto : string,
-  tanggal : Date
-}
+import { note } from '../note.service';
 
 @Component({
   selector: 'app-tab1',

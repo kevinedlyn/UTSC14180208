@@ -1,17 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Detail
     </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-label><h1>{{judulTemp}}</h1></ion-label>
+  <ion-input placeholder="Isi Page" [(ngModel)]="isiTemp"></ion-input>
+  <ion-input placeholder="Nilai Page" [(ngModel)]="nilaiTemp"></ion-input>
+  <ion-input placeholder="Tanggal" type="date" [(ngModel)]="tanggalTemp"></ion-input>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-button (click)="deleteNote()" color="danger">Delete Note</ion-button>
+    <ion-button (click)="editNote()">Edit Note</ion-button>
+  </ion-fab>
 </ion-content>
