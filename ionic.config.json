@@ -1,0 +1,7 @@
+{
+  "name": "UTSC14180208",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
